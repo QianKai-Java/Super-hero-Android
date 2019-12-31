@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.stx.xhb.androidx.XBanner
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/xb"
+            app:pointsVisibility="false"
+            android:scaleType="fitXY"></com.stx.xhb.androidx.XBanner>
+        <include layout="@layout/main_label" android:id="@+id/label_hot"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_hot_hero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <include layout="@layout/main_label" android:id="@+id/label_pre"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
